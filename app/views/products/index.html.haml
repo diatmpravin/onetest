@@ -1,0 +1,26 @@
+%h1 Listing products
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th Price
+    %th
+    %th
+    %th
+
+  - @products.each do |product|
+    %tr
+      %td{ :id => 'textLabel'}= product.name
+      %td{ :id => 'textLabel'}= product.description
+      %td{ :id => 'textLabel'}
+      %td{:clonspan => '2', :id => 'textLabel' }= product.price
+      %td{ :id => 'textLabel'}= link_to 'More Details', product
+
+%br
+%hr
+#registration
+  .regdetails
+  #textcolor REGISTER YOUR PRODUCT!
+  %hr
+  = render 'form'

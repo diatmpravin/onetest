@@ -1,0 +1,71 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#registration{
+	margin-left: 10%;
+    margin-top: 1%;
+	border:7px solid #DDDDDD;
+	width:940px;
+	height:320px;
+}
+
+#regdetails{
+	width:640px;
+	height:370px;
+	float:left;
+	left:150px;
+	top:20px;
+	position:relative;
+}
+
+.register {
+    background: none repeat scroll 0 0 #D59113;
+    color: #FFFFFF;
+    float: right;
+    font-size: 14px;
+    height: 25px;
+    margin-top: 10px;
+    width: 120px;
+    padding: 10px 10px 10px 10px;
+}
+
+table{
+	width:100%;
+	border-collapse:collapse;
+}
+
+td{
+	height:50px;
+	width:30%;
+}
+
+.sTextFieldEffect{
+    background: none repeat scroll 0 0 #CFCFCF;
+    border-color: #A5A5A5;
+    border-style: solid;
+    border-width: 1px;
+    color: #C6C6C6;
+    font-family: Arial;
+    font-size: 15px;
+    height: 25px;
+    width: 100%;
+    background: #F4F4F4;
+}
+
+.sTextAreaEffect {
+    background: none repeat scroll 0 0 #F4F4F4;
+    border-color: #A5A5A5;
+    border-style: solid;
+    border-width: 1px;
+    color: #C6C6C6;
+    font-family: Arial;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-height: 75px;
+    max-width: 200px;
+    min-height: 75px;
+    min-width: 100%;
+}
+

@@ -1,0 +1,24 @@
+= form_for @product, :validate => true do |f|
+  -if @product.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@product.errors.count, "error")} prohibited this product from being saved:"
+      %ul
+        - @product.errors.full_messages.each do |msg|
+          %li= msg
+          
+  %table
+    %tr
+      %td{ :id => 'textLabel'} Product Name 
+      %td{ :id => 'textLabel'}= f.text_field :name, :class => 'sTextFieldEffect'
+      
+    %tr
+      %td{ :id => 'textLabel'} Product Details
+      %td{ :id => 'textLabel'}= f.text_area :description, :class => 'sTextAreaEffect'
+      
+    %tr
+      %td{ :id => 'textLabel'} Price
+      %td{ :id => 'textLabel'}= f.text_field :price, :class => 'sTextFieldEffect'
+      
+    %tr
+      %td{ :id => 'textLabel'}
+      %td{ :id => 'textLabel'}= f.submit 'Create Product'

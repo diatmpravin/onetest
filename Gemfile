@@ -29,6 +29,7 @@ gem 'passenger'
 gem 'capistrano'
 gem "compass", ">= 0.10.6"
 gem 'haml'
+gem 'client_side_validations'
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
